@@ -5,5 +5,10 @@ export default () => ({
   },
   status: 'standby',
   message: null,
-  building: {}
+  building: {},
+  slots: {
+    data: [],
+    total: 0
+  },
+  slot: {}
 })

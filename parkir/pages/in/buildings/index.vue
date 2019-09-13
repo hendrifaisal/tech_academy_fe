@@ -25,7 +25,7 @@
         label="Name"
       />
       <el-table-column
-        width="200"
+        width="300"
       >
         <template
           slot="header"
@@ -36,6 +36,12 @@
           slot-scope="scope"
           class="text-center"
         >
+          <el-button
+            size="mini"
+            @click="handleSlots(scope.$index, scope.row.id)"
+          >
+            Slot
+          </el-button>
           <el-button
             size="mini"
             @click="handleUpdate(scope.$index, scope.row.id)"
@@ -71,6 +77,10 @@ export default {
   methods: {
     handleUpdate (id, data) {
       this.$router.push(`/in/buildings/${data}/edit`)
+    },
+
+    handleSlots (id, data) {
+      this.$router.push(`/in/buildings/${data}/slots`)
     },
 
     async handleDelete (id, data) {

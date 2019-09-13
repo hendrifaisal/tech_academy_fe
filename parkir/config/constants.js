@@ -14,11 +14,6 @@ export const MENU = [
         name: 'Building',
         path: '/in/buildings',
         index: '1-0'
-      },
-      {
-        name: 'Slot',
-        path: '/in/slots',
-        index: '1-1'
       }
     ]
   },

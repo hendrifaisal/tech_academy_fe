@@ -13,5 +13,14 @@ export default {
 
   building ({ building }) {
     return building
+  },
+
+  slotData ({ slots }) {
+    return slots
+  },
+
+  slot ({ slot }) {
+    return slot
   }
+
 }
