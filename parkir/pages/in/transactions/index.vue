@@ -35,11 +35,29 @@
       <el-table-column
         prop="start_at"
         label="Start"
-      />
+      >
+        <template
+          slot-scope="scope"
+          class="text-center"
+        >
+          <span>
+            {{ scope.row.start_at.replace('T',' ').substring(0,19) }}
+          </span>
+        </template>
+      </el-table-column>
       <el-table-column
         prop="end_at"
         label="End"
-      />
+      >
+        <template
+          slot-scope="scope"
+          class="text-center"
+        >
+          <span>
+            {{ scope.row.end_at.replace('T',' ').substring(0,19) }}
+          </span>
+        </template>
+      </el-table-column>
     </el-table>
   </div>
 </template>
