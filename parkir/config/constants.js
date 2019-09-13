@@ -6,12 +6,12 @@ export const MENU = [
     submenu: []
   },
   {
-    name: 'Manajemen Gedung',
+    name: 'Building Management',
     path: '#',
     index: '1',
     submenu: [
       {
-        name: 'Gedung',
+        name: 'Building',
         path: '/in/buildings',
         index: '1-0'
       },
@@ -28,12 +28,12 @@ export const MENU = [
     index: '2',
     submenu: [
       {
-        name: 'Transaksi',
+        name: 'Transaction',
         path: '/in/transactions',
         index: '2-0'
       },
       {
-        name: 'Statistik',
+        name: 'Statistic',
         path: '/in/stats',
         index: '2-1'
       }

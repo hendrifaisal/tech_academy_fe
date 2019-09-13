@@ -81,4 +81,6 @@ export default {
     state.status = 'error'
     state.message = message
   }
+
+  // [types.FETCH_SLOT_FROM_BUILDINGS] (state, id)
 }
